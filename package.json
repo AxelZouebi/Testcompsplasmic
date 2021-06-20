@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@plasmicapp/cli": "^0.1.154",
+    "@plasmicapp/loader": "^0.0.57",
     "@plasmicapp/react-web": "^0.2.61",
     "next": "11.0.0",
     "react": "17.0.2",
