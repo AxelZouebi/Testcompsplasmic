@@ -1,0 +1,78 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "3qkYNELke6qp7oK9m4xpSm",
+      "projectName": "Blank project",
+      "version": "latest",
+      "cssFilePath": "plasmic/blank_project/plasmic_blank_project.module.css",
+      "components": [
+        {
+          "id": "B3eAab7HweLe",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "3qkYNELke6qp7oK9m4xpSm",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "iOPFZS1Ntq",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "3qkYNELke6qp7oK9m4xpSm",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "codeComponents": [],
+      "projectApiToken": "NOT3ea3TRc0wHstGutLuqaV13aCpvoO0zyHdAQpz1vVgyW9fo4WcqvwJj6JGX4NbJrCBa9KckIKAujI5A"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "E_9BHVw5F9vy",
+        "name": "Screen",
+        "projectId": "3qkYNELke6qp7oK9m4xpSm",
+        "contextFilePath": "plasmic/blank_project/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.154",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.154/dist/plasmic.schema.json"
+}
