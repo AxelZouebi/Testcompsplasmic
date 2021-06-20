@@ -1,0 +1,11 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #331b1b repeat;
+}
+.root:active {
+  background: linear-gradient(#5662ca, #5662ca) repeat, #331b1b repeat;
+}
