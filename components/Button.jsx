@@ -3,7 +3,7 @@
 import * as React from "react";
 import { PlasmicButton } from "./plasmic/blank_project/PlasmicButton";
 
-function Button_(props, ref) {
+function Button_(props, ref, {todoss}) {
   // Use PlasmicButton to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -18,9 +18,26 @@ function Button_(props, ref) {
   //
   // By default, we are just piping all ButtonProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicButton root={{ ref }} {...props} />;
+
+
+  return <PlasmicButton root={{
+        props: {
+          todoss,
+        }
+      }} />;
 }
 
 const Button = React.forwardRef(Button_);
 
 export default Button;
+
+export const getStaticProps = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const todoss = await res.json();
+  return {
+    props: {
+      todoss,
+    },
+  };
+  
+};
