@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import PlasmicLoader from '@plasmicapp/loader';
 
 export default function Home() {
   return (
@@ -51,7 +50,6 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <PlasmicLoader component="Button" />
       </main>
 
       <footer className={styles.footer}>
