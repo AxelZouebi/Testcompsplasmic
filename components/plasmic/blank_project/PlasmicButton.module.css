@@ -1,0 +1,18 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background: #331b1b repeat;
+}
+.root:active {
+  background: linear-gradient(#5662ca, #5662ca) repeat, #331b1b repeat;
+}
+.slotChildren {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
